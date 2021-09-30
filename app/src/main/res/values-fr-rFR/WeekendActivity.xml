@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WeekendActivity">
+        <item> </item>
+        <item>Regarder la télévision</item>
+        <item>Vous promener</item>
+        <item>Jouer à des jeux vidéos</item>
+        <item>Faire du sport</item>
+    </string-array>
+</resources>

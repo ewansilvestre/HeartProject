@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DishType">
+        <item> </item>
+        <item>Prepared meals from the store</item>
+        <item>Home-cooked meals</item>
+        <item>Cans</item>
+    </string-array>
+</resources>

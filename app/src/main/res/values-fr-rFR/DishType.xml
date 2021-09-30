@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="DishType">
+        <item> </item>
+        <item>Des plats préparés du commerce</item>
+        <item>Des plats cuisinés à la maison</item>
+        <item>Des conserves</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HeartProject</string>
+    <string name="start">Commencer</string>
+    <string name="your_name">Votre nom</string>
+    <string name="my_profile">Mon Profil</string>
+    <string name="my_age">Mon âge</string>
+    <string name="less_than_40">Moins de 40 ans</string>
+    <string name="between_40_and_60">Entre 40 et 60 ans</string>
+    <string name="i_am">Je suis</string>
+    <string name="a_man">Un homme</string>
+    <string name="a_woman">Une femme</string>
+    <string name="more_than_60">Plus de 60 ans</string>
+    <string name="my_heart">Mon Coeur</string>
+    <string name="do_you_have_heart_issues">Avez-vous un problème cardiaque ?</string>
+    <string name="are_you_diabetic">Êtes-vous diabétique ?</string>
+    <string name="are_you_prone_to_hypertension">Êtes-vous sujet à de l\'hypertension ?</string>
+    <string name="do_you_know_your_body_mass_index">Connaissez-vous votre Indice de Masse Corporelle (IMC) ?</string>
+    <string name="do_you_have_cholesterol_issues">Avez-vous du Cholestérol ?</string>
+    <string name="previous">Précédent</string>
+    <string name="next">Suivant</string>
+    <string name="have_you_ever_had_a_heart_checkup">Avez-vous déjà effectué un bilan cardiaque ?</string>
+    <string name="have_you_ever_seen_a_cardiologist">Avez-vous déjà consulté un cardiologue ?</string>
+    <string name="have_you_already_reviewed_your_cardiovascular_risk_with_your_doctor">Avez-vous déjà fait le point avec votre médecin traitant à propos de votre risque cardiovasculaire ?</string>
+    <string name="my_heart_tracking">Mon Suivi Cardiaque</string>
+    <string name="have_there_been_cases_of_heart_problems_in_your_family">Y a-t-il eu des cas de problèmes cardiaques dans votre famille ?</string>
+    <string name="my_diet">Mon Alimentation</string>
+    <string name="do_you_start_your_day_with_breakfast">Commencez-vous votre journée par un petit-déjeuner ?</string>
+    <string name="do_you_eat_fruits_and_vegetables_every_day">Mangez-vous des fruits et légumes tous les jours ?</string>
+    <string name="at_your_house_do_you_eat_most_often">À votre domicile, vous mangez le plus souvent ?</string>
+    <string name="do_you_realize_your_dishes">Realisez-vous vos plats ?</string>
+    <string name="do_you_eat_cold_meats_regularly">Mangez-vous régulièrement de la charcuterie ?</string>
+    <string name="do_you_know_the_nutri_score">Connaissez-vous le Nutri-Score ?</string>
+    <string name="my_physical_activity">Mon Activité Sportive</string>
+    <string name="do_you_walk_briskly_every_day">Marchez-vous d’un bon pas tous les jours ?</string>
+    <string name="how_many_times_a_week_do_you_exercise_for_at_least_30_minutes">Combien de fois par semaine pratiquez-vous des activités physiques pendant au moins 30 minutes ?</string>
+    <string name="do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise">Connaissez-vous votre fréquence cardiaque à ne pas dépasser lors d’un effort ?</string>
+    <string name="regarding_your_sports_profile_would_you_say_that">Concernant votre profil sportif, diriez-vous que :</string>
+    <string name="which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends">Parmi les activités suivantes, laquelle pratiqueriez-vous le plus facilement pendant vos weekends ?</string>
+    <string name="my_tobacco_consumption">Ma Consomation De Tabac</string>
+    <string name="do_you_smoke_at_least_once_a_day">Fumez-vous au moins une fois par jour ?</string>
+    <string name="Are_you_a_former_smoker">Êtes-vous un ancien fumeur (vous avez arrêté depuis moins de 5 ans) ?</string>
+    <string name="Does_anyone_or_others_smoke_in_your_home">Une ou d’autres personnes fument-elles à votre domicile ?</string>
+    <string name="my_stress_managment">Ma Gestion Du Stress</string>
+</resources>
