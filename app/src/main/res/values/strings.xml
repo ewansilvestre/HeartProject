@@ -43,4 +43,7 @@
     <string name="are_you_prone_to_anger">Are you prone to anger ?</string>
     <string name="are_you_taking_any_antidepressants_anxiolytics_or_hypnotics">Are you taking any antidepressants, anxiolytics or hypnotics ?</string>
     <string name="do_you_manage_your_family_environment_on_your_own">Do you manage your family environment on your own ?</string>
+    <string name="my_life_hygiene">My Life Hygiene</string>
+    <string name="do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week">Do you ever drink more than 3 glasses of alcohol during the day once or twice a week (wine and beer included) ?</string>
+    <string name="do_you_ever_drink_energy_drinks">Do you ever drink energy drinks ?</string>
 </resources>

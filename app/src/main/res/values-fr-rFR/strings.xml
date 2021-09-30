@@ -44,4 +44,7 @@
     <string name="are_you_prone_to_anger">Êtes-vous sujet à des colères ?</string>
     <string name="are_you_taking_any_antidepressants_anxiolytics_or_hypnotics">Prenez-vous des antidépresseurs, anxiolytiques ou hypnotiques ?</string>
     <string name="do_you_manage_your_family_environment_on_your_own">Gérez-vous seul(e) votre environnement familial ?</string>
+    <string name="my_life_hygiene">Mon Hygiene De Vie</string>
+    <string name="do_you_ever_drink_energy_drinks">Vous arrive-t-il de boire des boissons énergisantes ?</string>
+    <string name="do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week">Vous arrive-t-il de boire plus de 3 verres d’alcool dans la journée 1 à 2 fois par semaine (vin et bière compris) ?</string>
 </resources>
