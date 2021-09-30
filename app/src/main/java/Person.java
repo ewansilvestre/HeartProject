@@ -1,5 +1,7 @@
 import android.os.Parcel;
 import android.os.Parcelable;
+import androidx.annotation.NonNull;
+//import com.example.heartproject.*;
 
 public class Person implements Parcelable {
 
@@ -17,6 +19,27 @@ public class Person implements Parcelable {
     private Boolean consulteCardio;
     private Boolean dej;
     private Boolean fruit;
+    public static final String DEFAULT = "UNDEFINED";
+
+    /**
+     * Constructor. All members get default values
+     */
+    public Person() {
+        this.setName(Person.DEFAULT);
+        this.setGenre(Person.DEFAULT);
+        this.setAge(0);
+        this.setPbCardiaque(false);
+        this.setCholesterol(false);
+        this.setDiabete(false);
+        this.setHypertension(false);
+        this.setPbCardiaqueFamille(false);
+        this.setImc(false);
+        this.setPtMedecin(false);
+        this.setBilanCardiaque(false);
+        this.setConsulteCardio(false);
+        this.setDej(false);
+        this.setFruit(false);
+    }
 
     protected Person(Parcel in) {
         name = in.readString();
@@ -80,4 +103,119 @@ public class Person implements Parcelable {
         parcel.writeByte((byte) (dej == null ? 0 : dej ? 1 : 2));
         parcel.writeByte((byte) (fruit == null ? 0 : fruit ? 1 : 2));
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public Boolean getPbCardiaque() {
+        return pbCardiaque;
+    }
+
+    public Boolean getCholesterol() {
+        return cholesterol;
+    }
+
+    public Boolean getDiabete() {
+        return diabete;
+    }
+
+    public Boolean getHypertension() {
+        return hypertension;
+    }
+
+    public Boolean getPbCardiaqueFamille() {
+        return pbCardiaqueFamille;
+    }
+
+    public Boolean getImc() {
+        return imc;
+    }
+
+    public Boolean getPtMedecin() {
+        return ptMedecin;
+    }
+
+    public Boolean getBilanCardiaque() {
+        return bilanCardiaque;
+    }
+
+    public Boolean getConsulteCardio() {
+        return consulteCardio;
+    }
+
+    public Boolean getDej() {
+        return dej;
+    }
+
+    public Boolean getFruit() {
+        return fruit;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setPbCardiaque(Boolean pbCardiaque) {
+        this.pbCardiaque = pbCardiaque;
+    }
+
+    public void setCholesterol(Boolean cholesterol) {
+        this.cholesterol = cholesterol;
+    }
+
+    public void setDiabete(Boolean diabete) {
+        this.diabete = diabete;
+    }
+
+    public void setHypertension(Boolean hypertension) {
+        this.hypertension = hypertension;
+    }
+
+    public void setPbCardiaqueFamille(Boolean pbCardiaqueFamille) {
+        this.pbCardiaqueFamille = pbCardiaqueFamille;
+    }
+
+    public void setImc(Boolean imc) {
+        this.imc = imc;
+    }
+
+    public void setPtMedecin(Boolean ptMedecin) {
+        this.ptMedecin = ptMedecin;
+    }
+
+    public void setBilanCardiaque(Boolean bilanCardiaque) {
+        this.bilanCardiaque = bilanCardiaque;
+    }
+
+    public void setConsulteCardio(Boolean consulteCardio) {
+        this.consulteCardio = consulteCardio;
+    }
+
+    public void setDej(Boolean dej) {
+        this.dej = dej;
+    }
+
+    public void setFruit(Boolean fruit) {
+        this.fruit = fruit;
+    }
+
+
+
 }
