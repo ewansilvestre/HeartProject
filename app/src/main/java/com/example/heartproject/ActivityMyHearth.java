@@ -35,7 +35,7 @@ public class ActivityMyHearth extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(KEY_NAME, spinner.getSelectedItem().toString());
+        outState.putString(KEY_NAME, spinner.getSelectedItemPosition());
     }
 
     @Override
@@ -43,7 +43,7 @@ public class ActivityMyHearth extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         if(savedInstanceState.containsKey(KEY_NAME)) {
             String item = savedInstanceState.getString(KEY_NAME);
-
+            spinner.setSelection();
         }
     }
 
