@@ -11,7 +11,6 @@ import android.view.View;
 public class ActivityWhoIAm extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityWhoIAm";
-    private radioGroup
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,21 +22,6 @@ public class ActivityWhoIAm extends AppCompatActivity {
         Log.d(TAG, "action_start: next step");
         Intent intent = new Intent(this, ActivityMyHearth.class);
         startActivity(intent);
-    }
-
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString(KEY_NAME, editName.getText().toString());
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState.containsKey(KEY_NAME)) {
-            String name = savedInstanceState.getString(KEY_NAME);
-            editName.setText(name);
-        }
     }
 
     private static final String KEY_NAME = "test";
