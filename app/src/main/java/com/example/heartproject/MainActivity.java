@@ -1,17 +1,19 @@
 package com.example.heartproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.heartproject.Person;
+
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Heart_MainActivity";
-
+    private Person person;
     private EditText editName;
 
     @Override
@@ -26,7 +28,12 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "action_start: "+ editName.getText());
         Intent intent = new Intent(this, ActivityWhoIAm.class);
         intent.putExtra(KEY_NAME,editName.getText().toString());
+
+        Intent activity2Intent = new Intent(this, ActivityWhoIAm.class);
+        activity2Intent.putExtra("FromActivity1ToActivity2", this.person);
         startActivity(intent);
+
+
     }
 
     @Override

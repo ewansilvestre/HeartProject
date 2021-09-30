@@ -1,6 +1,7 @@
+package com.example.heartproject;
+
 import android.os.Parcel;
 import android.os.Parcelable;
-import androidx.annotation.NonNull;
 //import com.example.heartproject.*;
 
 public class Person implements Parcelable {
@@ -45,7 +46,7 @@ public class Person implements Parcelable {
      * Display this instance's contents
      */
     public void print() {
-        System.out.println("Person's attributes: ");
+        System.out.println("com.example.heartproject.Person's attributes: ");
         System.out.print(this);
         System.out.println();
     }
