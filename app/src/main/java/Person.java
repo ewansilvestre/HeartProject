@@ -41,6 +41,15 @@ public class Person implements Parcelable {
         this.setFruit(false);
     }
 
+    /**
+     * Display this instance's contents
+     */
+    public void print() {
+        System.out.println("Person's attributes: ");
+        System.out.print(this);
+        System.out.println();
+    }
+
     protected Person(Parcel in) {
         name = in.readString();
         genre = in.readString();
