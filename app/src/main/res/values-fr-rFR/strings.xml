@@ -5,12 +5,9 @@
     <string name="your_name">Votre nom</string>
     <string name="my_profile">Mon Profil</string>
     <string name="my_age">Mon âge</string>
-    <string name="less_than_40">Moins de 40 ans</string>
-    <string name="between_40_and_60">Entre 40 et 60 ans</string>
     <string name="i_am">Je suis</string>
     <string name="a_man">Un homme</string>
     <string name="a_woman">Une femme</string>
-    <string name="more_than_60">Plus de 60 ans</string>
     <string name="my_heart">Mon Coeur</string>
     <string name="do_you_have_heart_issues">Avez-vous un problème cardiaque ?</string>
     <string name="are_you_diabetic">Êtes-vous diabétique ?</string>
@@ -42,4 +39,9 @@
     <string name="Are_you_a_former_smoker">Êtes-vous un ancien fumeur (vous avez arrêté depuis moins de 5 ans) ?</string>
     <string name="Does_anyone_or_others_smoke_in_your_home">Une ou d’autres personnes fument-elles à votre domicile ?</string>
     <string name="my_stress_managment">Ma Gestion Du Stress</string>
+    <string name="enter_your_age">Entrer votre age</string>
+    <string name="are_you_feeling_stressed_or_anxious">Vous sentez-vous stressé(e) ou anxieux(se) ?</string>
+    <string name="are_you_prone_to_anger">Êtes-vous sujet à des colères ?</string>
+    <string name="are_you_taking_any_antidepressants_anxiolytics_or_hypnotics">Prenez-vous des antidépresseurs, anxiolytiques ou hypnotiques ?</string>
+    <string name="do_you_manage_your_family_environment_on_your_own">Gérez-vous seul(e) votre environnement familial ?</string>
 </resources>

@@ -4,12 +4,9 @@
     <string name="your_name">Your name</string>
     <string name="my_profile">My Profile</string>
     <string name="my_age">My age</string>
-    <string name="less_than_40">Less than 40</string>
-    <string name="between_40_and_60">Between 40 and 60</string>
     <string name="i_am">I am</string>
     <string name="a_man">A man</string>
     <string name="a_woman">A woman</string>
-    <string name="more_than_60">More than 60</string>
     <string name="my_heart">My Heart</string>
     <string name="do_you_have_heart_issues">Do you have Heart issues ?</string>
     <string name="are_you_diabetic">Are you diabetic ?</string>
@@ -41,4 +38,9 @@
     <string name="Are_you_a_former_smoker">Are you a former smoker (you quit for less than 5 years) ?</string>
     <string name="Does_anyone_or_others_smoke_in_your_home">Does anyone or others smoke in your home ?</string>
     <string name="my_stress_managment">My Stress Managment</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="are_you_feeling_stressed_or_anxious">Are you feeling stressed or anxious ?</string>
+    <string name="are_you_prone_to_anger">Are you prone to anger ?</string>
+    <string name="are_you_taking_any_antidepressants_anxiolytics_or_hypnotics">Are you taking any antidepressants, anxiolytics or hypnotics ?</string>
+    <string name="do_you_manage_your_family_environment_on_your_own">Do you manage your family environment on your own ?</string>
 </resources>
