@@ -8,17 +8,20 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Spinner;
+import android.widget.Switch;
+
+import com.google.android.material.chip.Chip;
 
 public class ActivityMyHearth extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyHearth";
-    private Spinner spinner;
+    private Switch swi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_hearth);
-        spinner = findViewById(R.id.spinner);
+        swi = findViewById(R.id.switch1);
     }
 
     public void action_next_step (View v){
@@ -35,7 +38,7 @@ public class ActivityMyHearth extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(KEY_NAME, spinner.getSelectedItemPosition());
+
     }
 
     @Override
@@ -43,7 +46,7 @@ public class ActivityMyHearth extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         if(savedInstanceState.containsKey(KEY_NAME)) {
             String item = savedInstanceState.getString(KEY_NAME);
-            spinner.setSelection();
+
         }
     }
 
