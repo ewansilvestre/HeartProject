@@ -16,12 +16,24 @@ public class ActivityMyHearth extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyHearth";
     private Switch swi;
+    private Switch swi2;
+    private Switch swi3;
+    private Switch swi4;
+    private Switch swi5;
+    private Switch swi6;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_hearth);
         swi = findViewById(R.id.switch1);
+        swi2 = findViewById(R.id.switch2);
+        swi3 = findViewById(R.id.switch3);
+        swi4 = findViewById(R.id.switch4);
+        swi5 = findViewById(R.id.switch5);
+        swi6 = findViewById(R.id.switch6);
+
     }
 
     public void action_next_step (View v){
