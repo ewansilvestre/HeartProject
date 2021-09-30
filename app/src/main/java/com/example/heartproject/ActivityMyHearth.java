@@ -43,7 +43,7 @@ public class ActivityMyHearth extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         if(savedInstanceState.containsKey(KEY_NAME)) {
             String item = savedInstanceState.getString(KEY_NAME);
-            spinner.set;
+
         }
     }
 
