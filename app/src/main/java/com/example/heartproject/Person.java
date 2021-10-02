@@ -2,7 +2,7 @@ package com.example.heartproject;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.widget.TextView;
+import android.text.Editable;
 //import com.example.heartproject.*;
 
 public class Person implements Parcelable {
@@ -117,8 +117,8 @@ public class Person implements Parcelable {
         }
     };
 
-    public Person(String aName) {
-        name = aName;
+    public Person() {
+        name = "Unknow";
         genre = "Unknow";
         age = 0;
         pbCardiaque = false;
@@ -141,8 +141,8 @@ public class Person implements Parcelable {
         freqCardiaque = false;
         profilSportif = "Unknow";
         weAct = "Unknow";
-        Boolean fumeur = false;
-        Boolean acienFumeur = false;
+        fumeur = false;
+        acienFumeur = false;
         fumeurDomicile = false;
         stress = "Unknow";
         colere = "Unknow";
@@ -199,5 +199,17 @@ public class Person implements Parcelable {
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String aName) {
+        name = aName;
+    }
+
+    public void setAge(int aAge) {
+        age = aAge;
+    }
+
+    public int getAge() {
+        return age;
     }
 }

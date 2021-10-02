@@ -15,11 +15,14 @@ import com.example.heartproject.Person;
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Heart_MainActivity";
     private EditText editName;
+    private Person myUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Person user = new Person();
+        myUser = user;
         editName = findViewById(R.id.textName);
     }
     
@@ -33,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         else
         {
             Log.d(TAG, "action_start: "+ editName.getText());
-            Person user = new Person(editName.getText().toString());
-            Log.d(TAG, "action_start: "+ user.getName());
+            myUser.setName(editName.getText().toString());
+            Log.d(TAG, "action_start: "+ myUser.getName());
             Intent intent = new Intent(this, ActivityWhoIAm.class);
-            intent.putExtra(KEY_NAME,editName.getText().toString());
+            intent.putExtra(KEY_USER,myUser);
             startActivity(intent);
         }
     }
@@ -44,17 +47,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putString(KEY_NAME, editName.getText().toString());
+        outState.putString(KEY_USER, String.valueOf(myUser));
     }
 
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState.containsKey(KEY_NAME)) {
-            String name = savedInstanceState.getString(KEY_NAME);
-            editName.setText(name);
+        if(savedInstanceState.containsKey(KEY_USER)) {
+            Person user = savedInstanceState.getParcelable(KEY_USER);
+            editName.setText(user.getName());
         }
     }
 
-    private static final String KEY_NAME = "name";
+    private static final String KEY_USER = "user";
 }
