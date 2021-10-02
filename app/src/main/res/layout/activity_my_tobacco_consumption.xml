@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView25"
-        android:layout_width="194dp"
-        android:layout_height="57dp"
+        android:layout_width="139dp"
+        android:layout_height="78dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="@string/my_tobacco_consumption"

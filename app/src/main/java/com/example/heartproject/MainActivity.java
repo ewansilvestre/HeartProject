@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         editName = findViewById(R.id.textName);
     }
-
+    
     public void action_start (View v){
         if(editName.getText().toString().matches(""))
         {
             Log.d(TAG, "action_start: le champ name est vide");
-            Toast.makeText(MainActivity.this, "You did not enter your name", Toast.LENGTH_SHORT).show();
-            return;
+            Toast.makeText(this.getBaseContext(),"You did not enter your name",Toast.LENGTH_LONG).show();
+            Log.d(TAG, "action_start: toast");
         }
         else
         {

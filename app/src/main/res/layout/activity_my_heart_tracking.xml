@@ -19,8 +19,8 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="301dp"
-        android:layout_height="46dp"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
         android:text="@string/have_you_already_reviewed_your_cardiovascular_risk_with_your_doctor"
