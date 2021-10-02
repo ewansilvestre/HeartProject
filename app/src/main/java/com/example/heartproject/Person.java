@@ -21,36 +21,27 @@ public class Person implements Parcelable {
     private Boolean consulteCardio;
     private Boolean dej;
     private Boolean fruit;
-    public static final String DEFAULT = "UNDEFINED";
+    private String repasMaison;
+    private Boolean platCuisiner;
+    private Boolean charcuterie;
+    private Boolean nutriScore;
+    private Boolean marche;
+    private String actParJour;
+    private Boolean freqCardiaque;
+    private String profilSportif;
+    private String weAct;
+    private Boolean fumeur;
+    private Boolean acienFumeur;
+    private Boolean fumeurDomicile;
+    private String stress;
+    private String colere;
+    private Boolean medicament;
+    private Boolean gestionFamille;
+    private Boolean alcool;
+    private Boolean energisant;
+    private Boolean dormir;
+    private Boolean troubleSommeil;
 
-    /**
-     * Constructor. All members get default values
-     */
-    public Person() {
-        this.setName(Person.DEFAULT);
-        this.setGenre(Person.DEFAULT);
-        this.setAge(0);
-        this.setPbCardiaque(false);
-        this.setCholesterol(false);
-        this.setDiabete(false);
-        this.setHypertension(false);
-        this.setPbCardiaqueFamille(false);
-        this.setImc(false);
-        this.setPtMedecin(false);
-        this.setBilanCardiaque(false);
-        this.setConsulteCardio(false);
-        this.setDej(false);
-        this.setFruit(false);
-    }
-
-    /**
-     * Display this instance's contents
-     */
-    public void print() {
-        System.out.println("com.example.heartproject.Person's attributes: ");
-        System.out.print(this);
-        System.out.println();
-    }
 
     protected Person(Parcel in) {
         name = in.readString();
@@ -78,6 +69,40 @@ public class Person implements Parcelable {
         dej = tmpDej == 0 ? null : tmpDej == 1;
         byte tmpFruit = in.readByte();
         fruit = tmpFruit == 0 ? null : tmpFruit == 1;
+        repasMaison = in.readString();
+        byte tmpPlatCuisiner = in.readByte();
+        platCuisiner = tmpPlatCuisiner == 0 ? null : tmpPlatCuisiner == 1;
+        byte tmpCharcuterie = in.readByte();
+        charcuterie = tmpCharcuterie == 0 ? null : tmpCharcuterie == 1;
+        byte tmpNutriScore = in.readByte();
+        nutriScore = tmpNutriScore == 0 ? null : tmpNutriScore == 1;
+        byte tmpMarche = in.readByte();
+        marche = tmpMarche == 0 ? null : tmpMarche == 1;
+        actParJour = in.readString();
+        byte tmpFreqCardiaque = in.readByte();
+        freqCardiaque = tmpFreqCardiaque == 0 ? null : tmpFreqCardiaque == 1;
+        profilSportif = in.readString();
+        weAct = in.readString();
+        byte tmpFumeur = in.readByte();
+        fumeur = tmpFumeur == 0 ? null : tmpFumeur == 1;
+        byte tmpAcienFumeur = in.readByte();
+        acienFumeur = tmpAcienFumeur == 0 ? null : tmpAcienFumeur == 1;
+        byte tmpFumeurDomicile = in.readByte();
+        fumeurDomicile = tmpFumeurDomicile == 0 ? null : tmpFumeurDomicile == 1;
+        stress = in.readString();
+        colere = in.readString();
+        byte tmpMedicament = in.readByte();
+        medicament = tmpMedicament == 0 ? null : tmpMedicament == 1;
+        byte tmpGestionFamille = in.readByte();
+        gestionFamille = tmpGestionFamille == 0 ? null : tmpGestionFamille == 1;
+        byte tmpAlcool = in.readByte();
+        alcool = tmpAlcool == 0 ? null : tmpAlcool == 1;
+        byte tmpEnergisant = in.readByte();
+        energisant = tmpEnergisant == 0 ? null : tmpEnergisant == 1;
+        byte tmpDormir = in.readByte();
+        dormir = tmpDormir == 0 ? null : tmpDormir == 1;
+        byte tmpTroubleSommeil = in.readByte();
+        troubleSommeil = tmpTroubleSommeil == 0 ? null : tmpTroubleSommeil == 1;
     }
 
     public static final Creator<Person> CREATOR = new Creator<Person>() {
@@ -91,6 +116,43 @@ public class Person implements Parcelable {
             return new Person[size];
         }
     };
+
+    public Person(String aName) {
+        name = aName;
+        genre = "Unknow";
+        age = 0;
+        pbCardiaque = false;
+        cholesterol = false;
+        diabete = false;
+        hypertension = false;
+        pbCardiaqueFamille = false;
+        imc = false;
+        ptMedecin = false;
+        bilanCardiaque = false;
+        consulteCardio = false;
+        dej = false;
+        fruit = false;
+        repasMaison = "Unknow";
+        platCuisiner = false;
+        charcuterie = false;
+        nutriScore = false;
+        marche = false;
+        actParJour = "Unknow";
+        freqCardiaque = false;
+        profilSportif = "Unknow";
+        weAct = "Unknow";
+        Boolean fumeur = false;
+        Boolean acienFumeur = false;
+        fumeurDomicile = false;
+        stress = "Unknow";
+        colere = "Unknow";
+        medicament = false;
+        gestionFamille = false;
+        alcool = false;
+        energisant = false;
+        dormir = false;
+        troubleSommeil = false;
+    }
 
     @Override
     public int describeContents() {
@@ -113,117 +175,29 @@ public class Person implements Parcelable {
         parcel.writeByte((byte) (consulteCardio == null ? 0 : consulteCardio ? 1 : 2));
         parcel.writeByte((byte) (dej == null ? 0 : dej ? 1 : 2));
         parcel.writeByte((byte) (fruit == null ? 0 : fruit ? 1 : 2));
+        parcel.writeString(repasMaison);
+        parcel.writeByte((byte) (platCuisiner == null ? 0 : platCuisiner ? 1 : 2));
+        parcel.writeByte((byte) (charcuterie == null ? 0 : charcuterie ? 1 : 2));
+        parcel.writeByte((byte) (nutriScore == null ? 0 : nutriScore ? 1 : 2));
+        parcel.writeByte((byte) (marche == null ? 0 : marche ? 1 : 2));
+        parcel.writeString(actParJour);
+        parcel.writeByte((byte) (freqCardiaque == null ? 0 : freqCardiaque ? 1 : 2));
+        parcel.writeString(profilSportif);
+        parcel.writeString(weAct);
+        parcel.writeByte((byte) (fumeur == null ? 0 : fumeur ? 1 : 2));
+        parcel.writeByte((byte) (acienFumeur == null ? 0 : acienFumeur ? 1 : 2));
+        parcel.writeByte((byte) (fumeurDomicile == null ? 0 : fumeurDomicile ? 1 : 2));
+        parcel.writeString(stress);
+        parcel.writeString(colere);
+        parcel.writeByte((byte) (medicament == null ? 0 : medicament ? 1 : 2));
+        parcel.writeByte((byte) (gestionFamille == null ? 0 : gestionFamille ? 1 : 2));
+        parcel.writeByte((byte) (alcool == null ? 0 : alcool ? 1 : 2));
+        parcel.writeByte((byte) (energisant == null ? 0 : energisant ? 1 : 2));
+        parcel.writeByte((byte) (dormir == null ? 0 : dormir ? 1 : 2));
+        parcel.writeByte((byte) (troubleSommeil == null ? 0 : troubleSommeil ? 1 : 2));
     }
 
     public String getName() {
         return name;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public Boolean getPbCardiaque() {
-        return pbCardiaque;
-    }
-
-    public Boolean getCholesterol() {
-        return cholesterol;
-    }
-
-    public Boolean getDiabete() {
-        return diabete;
-    }
-
-    public Boolean getHypertension() {
-        return hypertension;
-    }
-
-    public Boolean getPbCardiaqueFamille() {
-        return pbCardiaqueFamille;
-    }
-
-    public Boolean getImc() {
-        return imc;
-    }
-
-    public Boolean getPtMedecin() {
-        return ptMedecin;
-    }
-
-    public Boolean getBilanCardiaque() {
-        return bilanCardiaque;
-    }
-
-    public Boolean getConsulteCardio() {
-        return consulteCardio;
-    }
-
-    public Boolean getDej() {
-        return dej;
-    }
-
-    public Boolean getFruit() {
-        return fruit;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void setPbCardiaque(Boolean pbCardiaque) {
-        this.pbCardiaque = pbCardiaque;
-    }
-
-    public void setCholesterol(Boolean cholesterol) {
-        this.cholesterol = cholesterol;
-    }
-
-    public void setDiabete(Boolean diabete) {
-        this.diabete = diabete;
-    }
-
-    public void setHypertension(Boolean hypertension) {
-        this.hypertension = hypertension;
-    }
-
-    public void setPbCardiaqueFamille(Boolean pbCardiaqueFamille) {
-        this.pbCardiaqueFamille = pbCardiaqueFamille;
-    }
-
-    public void setImc(Boolean imc) {
-        this.imc = imc;
-    }
-
-    public void setPtMedecin(Boolean ptMedecin) {
-        this.ptMedecin = ptMedecin;
-    }
-
-    public void setBilanCardiaque(Boolean bilanCardiaque) {
-        this.bilanCardiaque = bilanCardiaque;
-    }
-
-    public void setConsulteCardio(Boolean consulteCardio) {
-        this.consulteCardio = consulteCardio;
-    }
-
-    public void setDej(Boolean dej) {
-        this.dej = dej;
-    }
-
-    public void setFruit(Boolean fruit) {
-        this.fruit = fruit;
     }
 }

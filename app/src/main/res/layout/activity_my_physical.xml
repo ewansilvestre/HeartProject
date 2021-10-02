@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="265dp"
-        android:layout_height="40dp"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="230dp"
         android:text="@string/do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise"
@@ -84,7 +84,7 @@
     <TextView
         android:id="@+id/textView24"
         android:layout_width="289dp"
-        android:layout_height="37dp"
+        android:layout_height="54dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="410dp"
         android:text="@string/which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends"

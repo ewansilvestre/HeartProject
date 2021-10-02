@@ -13,7 +13,6 @@ import com.example.heartproject.Person;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "Heart_MainActivity";
-    private Person person;
     private EditText editName;
 
     @Override
@@ -21,19 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         editName = findViewById(R.id.textName);
-
     }
 
     public void action_start (View v){
         Log.d(TAG, "action_start: "+ editName.getText());
+        Person user = new Person(editName.getText().toString());
+        Log.d(TAG, "action_start: "+ user.getName());
         Intent intent = new Intent(this, ActivityWhoIAm.class);
         intent.putExtra(KEY_NAME,editName.getText().toString());
-
-        Intent activity2Intent = new Intent(this, ActivityWhoIAm.class);
-        activity2Intent.putExtra("FromActivity1ToActivity2", this.person);
         startActivity(intent);
-
-
     }
 
     @Override
