@@ -43,8 +43,8 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="236dp"
+        android:layout_height="40dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
         android:text="@string/do_you_walk_briskly_every_day"
@@ -53,8 +53,8 @@
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="271dp"
-        android:layout_height="38dp"
+        android:layout_width="239dp"
+        android:layout_height="72dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="140dp"
         android:text="@string/how_many_times_a_week_do_you_exercise_for_at_least_30_minutes"
@@ -63,8 +63,8 @@
 
     <TextView
         android:id="@+id/textView22"
-        android:layout_width="267dp"
-        android:layout_height="51dp"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="230dp"
         android:text="@string/do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise"
@@ -73,8 +73,8 @@
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="268dp"
-        android:layout_height="34dp"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="320dp"
         android:text="@string/regarding_your_sports_profile_would_you_say_that"
@@ -83,8 +83,8 @@
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="289dp"
-        android:layout_height="54dp"
+        android:layout_width="248dp"
+        android:layout_height="61dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="410dp"
         android:text="@string/which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends"

@@ -44,20 +44,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putString(KEY_USER, String.valueOf(myUser));
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState.containsKey(KEY_USER)) {
-            Person user = savedInstanceState.getParcelable(KEY_USER);
-            editName.setText(user.getName());
-        }
-    }
-
     private static final String KEY_USER = "user";
 }

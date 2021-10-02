@@ -6,17 +6,27 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 public class ActivityMyStressManagment extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyStressManagment";
     Person myUser;
+    Spinner sp1;
+    Spinner sp2;
+    Spinner sp3;
+    Spinner sp4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_stress_managment);
         getData();
+        sp1 = findViewById(R.id.spinner);
+        sp2 = findViewById(R.id.spinner2);
+        sp3 = findViewById(R.id.spinner3);
+        sp4 = findViewById(R.id.spinner4);
     }
 
     private void getData() {
@@ -36,9 +46,26 @@ public class ActivityMyStressManagment extends AppCompatActivity {
     }
 
     public void action_next_step (View v){
-        Log.d(TAG, "action_start: next step");
-        Intent intent = new Intent(this, ActivityMyLifeHygiene.class);
-        startActivity(intent);
+        if(sp1.getSelectedItem().toString().matches("") || sp2.getSelectedItem().toString().matches("") || sp3.getSelectedItem().toString().matches("") || sp4.getSelectedItem().toString().matches(""))
+        {
+            Log.d(TAG, "action_next_step: le champ name est vide");
+            Toast.makeText(this.getBaseContext(),"You forgot a field",Toast.LENGTH_LONG).show();
+            Log.d(TAG, "action_next_step: toast");
+        }
+        else {
+            Log.d(TAG, "action_next_step: " + sp1.getSelectedItem() + " " + myUser.getName());
+            myUser.setStress(sp1.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: " + sp2.getSelectedItem() + " " + myUser.getName());
+            myUser.setColere(sp2.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: " + sp3.getSelectedItem() + " " + myUser.getName());
+            myUser.setMedicament(sp3.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: " + sp4.getSelectedItem() + " " + myUser.getName());
+            myUser.setGestionFamille(sp4.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getStress() + " " + myUser.getColere() + " " + myUser.getMedicament() + " " + myUser.getGestionFamille());
+            Intent intent2 = new Intent(this, ActivityMyLifeHygiene.class);
+            intent2.putExtra(KEY_USER, myUser);
+            startActivity(intent2);
+        }
     }
 
     public void action_previous_step (View v){

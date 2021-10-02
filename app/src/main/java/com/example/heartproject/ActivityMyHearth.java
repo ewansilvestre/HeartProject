@@ -68,7 +68,7 @@ public class ActivityMyHearth extends AppCompatActivity {
             Intent intent2 = new Intent(this, ActivityMyHeartTracking.class);
             intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);
-            Log.d(TAG, "action_next_step:");
+            Log.d(TAG, "action_next_step: A faire");
         }
     }
 

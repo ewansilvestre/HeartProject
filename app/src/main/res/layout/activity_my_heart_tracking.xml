@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="304dp"
+        android:layout_width="262dp"
         android:layout_height="58dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="301dp"
-        android:layout_height="42dp"
+        android:layout_width="261dp"
+        android:layout_height="39dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="140dp"
         android:text="@string/have_you_ever_had_a_heart_checkup"
@@ -39,8 +39,8 @@
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="295dp"
-        android:layout_height="44dp"
+        android:layout_width="255dp"
+        android:layout_height="42dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="230dp"
         android:text="@string/have_you_ever_seen_a_cardiologist"

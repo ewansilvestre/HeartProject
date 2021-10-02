@@ -15,6 +15,8 @@ public class ActivityMyHeartTracking extends AppCompatActivity {
     public static final String TAG = "Heart_ActivityMyHeartTracking";
     Person myUser;
     Spinner sp1;
+    Spinner sp2;
+    Spinner sp3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,8 @@ public class ActivityMyHeartTracking extends AppCompatActivity {
         setContentView(R.layout.activity_my_heart_tracking);
         getData();
         sp1 = findViewById(R.id.spinner7);
+        sp2 = findViewById(R.id.spinner8);
+        sp3 = findViewById(R.id.spinner9);
     }
 
     private void getData() {
@@ -41,17 +45,21 @@ public class ActivityMyHeartTracking extends AppCompatActivity {
     }
 
     public void action_next_step (View v){
-        if(sp1.getSelectedItem().toString().matches(""))
+        if(sp1.getSelectedItem().toString().matches("") || sp2.getSelectedItem().toString().matches("") || sp3.getSelectedItem().toString().matches(""))
         {
-            Log.d(TAG, "action_start: le champ name est vide");
+            Log.d(TAG, "action_next_step: le champ name est vide");
             Toast.makeText(this.getBaseContext(),"You forgot a field",Toast.LENGTH_LONG).show();
-            Log.d(TAG, "action_start: toast");
+            Log.d(TAG, "action_next_step: toast");
         }
         else
         {
             Log.d(TAG, "action_next_step: "+ sp1.getSelectedItem()+" "+myUser.getName());
             myUser.setPtMedecin(sp1.getSelectedItem().toString());
-            Log.d(TAG, "action_next_step: "+ myUser.getPtMedecin()+" "+myUser.getName());
+            Log.d(TAG, "action_next_step: "+ sp2.getSelectedItem()+" "+myUser.getName());
+            myUser.setBilanCardiaque(sp2.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: "+ sp3.getSelectedItem()+" "+myUser.getName());
+            myUser.setConsulteCardio(sp3.getSelectedItem().toString());
+            Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getPtMedecin() + " " + myUser.getBilanCardiaque() + " " + myUser.getConsulteCardio());
             Intent intent2 = new Intent(this, ActivityMyDiet.class);
             intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);

@@ -52,8 +52,8 @@
 
     <TextView
         android:id="@+id/textView35"
-        android:layout_width="281dp"
-        android:layout_height="60dp"
+        android:layout_width="248dp"
+        android:layout_height="74dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
         android:text="@string/do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week"
@@ -62,8 +62,8 @@
 
     <TextView
         android:id="@+id/textView36"
-        android:layout_width="279dp"
-        android:layout_height="33dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="140dp"
         android:text="@string/do_you_ever_drink_energy_drinks"
@@ -82,8 +82,8 @@
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="295dp"
-        android:layout_height="27dp"
+        android:layout_width="245dp"
+        android:layout_height="40dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="320dp"
         android:text="@string/are_you_prone_to_sleep_disturbances"

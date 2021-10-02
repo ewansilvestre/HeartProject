@@ -52,7 +52,7 @@ public class ActivityWhoIAm extends AppCompatActivity {
         {
             Log.d(TAG, "action_next_step: "+ editAge.getText()+" "+myUser.getName());
             myUser.setAge(Integer.parseInt(String.valueOf(editAge.getText())));
-            Log.d(TAG, "action_next_step: "+ myUser.getAge()+" "+myUser.getName());
+            Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getAge() + " " + myUser.getGenre());
             Intent intent2 = new Intent(this, ActivityMyHearth.class);
             intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);

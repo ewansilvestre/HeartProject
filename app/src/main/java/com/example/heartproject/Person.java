@@ -241,20 +241,20 @@ public class Person implements Parcelable {
         pbCardiaqueFamille = aPbCardiaqueFamille;
     }
 
-    public String getPtMedecin() {
-        return ptMedecin;
-    }
-
-    public void setPtMedecin(String aPtMedecin) {
-        ptMedecin = aPtMedecin;
-    }
-
     public Boolean getImc() {
         return imc;
     }
 
     public void setImc(Boolean imc) {
         this.imc = imc;
+    }
+
+    public String getPtMedecin() {
+        return ptMedecin;
+    }
+
+    public void setPtMedecin(String aPtMedecin) {
+        ptMedecin = aPtMedecin;
     }
 
     public String getBilanCardiaque() {
