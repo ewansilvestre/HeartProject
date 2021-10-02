@@ -19,9 +19,9 @@ public class ActivityWhoIAm extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getData();
-        Log.d(TAG, "action_start: "+myUser.getName());
         setContentView(R.layout.activity_who_iam);
+        getData();
+        Log.d(TAG, "on_create: "+myUser.getName());
         editAge = findViewById(R.id.age);
     }
 
@@ -44,17 +44,17 @@ public class ActivityWhoIAm extends AppCompatActivity {
     public void action_next_step (View v){
         if(editAge.getText().toString().matches(""))
         {
-            Log.d(TAG, "action_start: le champ name est vide");
+            Log.d(TAG, "action_next_step: le champ name est vide");
             Toast.makeText(this.getBaseContext(),"You did not enter your age",Toast.LENGTH_LONG).show();
-            Log.d(TAG, "action_start: toast");
+            Log.d(TAG, "action_next_step: toast");
         }
         else
         {
-            Log.d(TAG, "action_start: "+ editAge.getText()+" "+myUser.getAge());
-            //myUser.setAge(editAge.getText());
-            Log.d(TAG, "action_start: "+ myUser.getName()+" "+myUser.getAge());
-            Intent intent2 = new Intent(this, ActivityWhoIAm.class);
-            intent2.putExtra(KEY_USER,editAge.getText().toString());
+            Log.d(TAG, "action_next_step: "+ editAge.getText()+" "+myUser.getName());
+            myUser.setAge(Integer.parseInt(String.valueOf(editAge.getText())));
+            Log.d(TAG, "action_next_step: "+ myUser.getAge()+" "+myUser.getName());
+            Intent intent2 = new Intent(this, ActivityMyHearth.class);
+            intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);
         }
     }

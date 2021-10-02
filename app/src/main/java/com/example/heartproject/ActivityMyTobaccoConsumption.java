@@ -10,11 +10,29 @@ import android.view.View;
 public class ActivityMyTobaccoConsumption extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyTobaccoConsumption";
+    Person myUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_tobacco_consumption);
+        getData();
+    }
+
+    private void getData() {
+        Intent intent = getIntent();
+        if(intent != null){
+            Person transferredPerson = intent.getParcelableExtra(KEY_USER);
+            if(transferredPerson != null){
+                this.myUser = transferredPerson;
+            }
+            else{
+                Log.d(TAG, "Aucune personne trouvé après transfert de MainActivity");
+            }
+        }
+        else{
+            Log.d(TAG, "Erreur de transfert depuis MainActivity");
+        }
     }
 
     public void action_next_step (View v){
@@ -28,5 +46,5 @@ public class ActivityMyTobaccoConsumption extends AppCompatActivity {
         finish();
     }
 
-    private static final String KEY_NAME = "test";
+    private static final String KEY_USER = "user";
 }

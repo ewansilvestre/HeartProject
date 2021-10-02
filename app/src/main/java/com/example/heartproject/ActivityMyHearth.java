@@ -9,12 +9,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.android.material.chip.Chip;
 
 public class ActivityMyHearth extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyHearth";
+    Person myUser;
     private Switch swi;
     private Switch swi2;
     private Switch swi3;
@@ -27,6 +29,8 @@ public class ActivityMyHearth extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_hearth);
+        getData();
+        Log.d(TAG, "on_create: "+myUser.getName()+" "+myUser.getAge());
         swi = findViewById(R.id.switch1);
         swi2 = findViewById(R.id.switch2);
         swi3 = findViewById(R.id.switch3);
@@ -36,10 +40,36 @@ public class ActivityMyHearth extends AppCompatActivity {
 
     }
 
+    private void getData() {
+        Intent intent = getIntent();
+        if(intent != null){
+            Person transferredPerson = intent.getParcelableExtra(KEY_USER);
+            if(transferredPerson != null){
+                this.myUser = transferredPerson;
+            }
+            else{
+                Log.d(TAG, "Aucune personne trouvé après transfert de MainActivity");
+            }
+        }
+        else{
+            Log.d(TAG, "Erreur de transfert depuis MainActivity");
+        }
+    }
+
     public void action_next_step (View v){
-        Log.d(TAG, "action_start: next step");
-        Intent intent = new Intent(this, ActivityMyHeartTracking.class);
-        startActivity(intent);
+        if(swi.getText().toString().matches(" "))
+        {
+            Log.d(TAG, "action_start: le champ name est vide");
+            Toast.makeText(this.getBaseContext(),"You forgot a field",Toast.LENGTH_LONG).show();
+            Log.d(TAG, "action_start: toast");
+        }
+        else
+        {
+            Intent intent2 = new Intent(this, ActivityMyHeartTracking.class);
+            intent2.putExtra(KEY_USER,myUser);
+            startActivity(intent2);
+            Log.d(TAG, "action_next_step:");
+        }
     }
 
     public void action_previous_step (View v){
@@ -47,20 +77,5 @@ public class ActivityMyHearth extends AppCompatActivity {
         finish();
     }
 
-    @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-        if(savedInstanceState.containsKey(KEY_NAME)) {
-            String item = savedInstanceState.getString(KEY_NAME);
-
-        }
-    }
-
-    private static final String KEY_NAME = "test";
+    private static final String KEY_USER = "user";
 }
