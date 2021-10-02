@@ -29,7 +29,7 @@ public class ActivityWhoIAm extends AppCompatActivity {
                 this.person = transferredPerson;
                 this.person.print();
                 nom_recup = findViewById(R.id.textView34);
-                nom_recup = this.person.getName();
+                //nom_recup = this.person.setName();
             }
             else {
                 Log.d(TAG, "No Person found after transfer from Activity1");

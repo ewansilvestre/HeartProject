@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityMyStressManagment">
+    tools:context=".ActivityMyLifeHygiene">
 
     <TextView
-        android:id="@+id/textView29"
-        android:layout_width="192dp"
-        android:layout_height="67dp"
+        android:id="@+id/textView34"
+        android:layout_width="184dp"
+        android:layout_height="43dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="@string/my_stress_managment"
+        android:text="@string/my_life_hygiene"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,28 +20,17 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="78dp"
-        android:layout_height="75dp"
+        android:id="@+id/imageView9"
+        android:layout_width="68dp"
+        android:layout_height="64dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/magestiondustress" />
+        app:srcCompat="@drawable/monhygienedevie" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="16dp"
-        android:onClick="action_next_step"
-        android:text="@string/next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/button13"
+        android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -51,83 +40,93 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView30"
+    <Button
+        android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="281dp"
+        android:layout_height="60dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="50dp"
-        android:text="@string/are_you_feeling_stressed_or_anxious"
+        android:text="@string/do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/textView36"
+        android:layout_width="279dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/do_you_ever_drink_energy_drinks"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView37"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="140dp"
-        android:text="@string/are_you_prone_to_anger"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="287dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="5dp"
         android:layout_marginTop="230dp"
-        android:text="@string/are_you_taking_any_antidepressants_anxiolytics_or_hypnotics"
+        android:text="@string/do_you_get_more_than_7_hours_of_sleep_per_night"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
-        android:id="@+id/textView33"
-        android:layout_width="284dp"
-        android:layout_height="34dp"
+        android:id="@+id/textView38"
+        android:layout_width="295dp"
+        android:layout_height="27dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="320dp"
-        android:text="@string/do_you_manage_your_family_environment_on_your_own"
+        android:text="@string/are_you_prone_to_sleep_disturbances"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner5"
         android:layout_width="95dp"
         android:layout_height="45dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="10dp"
-        android:entries="@array/Stress"
+        android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spinner6"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="10dp"
-        android:entries="@array/Anger"
+        android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <Spinner
-        android:id="@+id/spinner3"
+        android:id="@+id/spinner24"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:layout_marginTop="220dp"
         android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <Spinner
-        android:id="@+id/spinner4"
+        android:id="@+id/spinner25"
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:layout_marginTop="310dp"
         android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 </androidx.constraintlayout.widget.ConstraintLayout>

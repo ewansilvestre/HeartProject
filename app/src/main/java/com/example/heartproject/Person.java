@@ -2,6 +2,7 @@ package com.example.heartproject;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.widget.TextView;
 //import com.example.heartproject.*;
 
 public class Person implements Parcelable {
@@ -225,7 +226,4 @@ public class Person implements Parcelable {
     public void setFruit(Boolean fruit) {
         this.fruit = fruit;
     }
-
-
-
 }

@@ -7,20 +7,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-public class ActivityMyStressManagment extends AppCompatActivity {
+public class ActivityMyLifeHygiene extends AppCompatActivity {
 
-    public static final String TAG = "Heart_ActivityMyStressManagment";
+    public static final String TAG = "Heart_ActivityMyLifeHygiene";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_stress_managment);
-    }
-
-    public void action_next_step (View v){
-        Log.d(TAG, "action_start: next step");
-        Intent intent = new Intent(this, ActivityMyLifeHygiene.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_my_life_hygiene);
     }
 
     public void action_previous_step (View v){

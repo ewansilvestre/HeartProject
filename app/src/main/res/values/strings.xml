@@ -46,4 +46,6 @@
     <string name="my_life_hygiene">My Life Hygiene</string>
     <string name="do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week">Do you ever drink more than 3 glasses of alcohol during the day once or twice a week (wine and beer included) ?</string>
     <string name="do_you_ever_drink_energy_drinks">Do you ever drink energy drinks ?</string>
+    <string name="do_you_get_more_than_7_hours_of_sleep_per_night">Do you get more than 7 hours of sleep per night ?</string>
+    <string name="are_you_prone_to_sleep_disturbances">Are you prone to sleep disturbances ?</string>
 </resources>

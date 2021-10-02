@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Stress">
+        <item> </item>
+        <item>Jamais</item>
+        <item>Parfois</item>
+        <item>Constament</item>
+    </string-array>
+</resources>

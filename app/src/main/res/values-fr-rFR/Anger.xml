@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Anger">
+        <item> </item>
+        <item>Jamais</item>
+        <item>Peu</item>
+        <item>Frequament</item>
+        <item>Très frequament</item>
+    </string-array>
+</resources>
