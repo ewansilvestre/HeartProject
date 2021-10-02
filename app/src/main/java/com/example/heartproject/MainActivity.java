@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,12 +24,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void action_start (View v){
-        Log.d(TAG, "action_start: "+ editName.getText());
-        Person user = new Person(editName.getText().toString());
-        Log.d(TAG, "action_start: "+ user.getName());
-        Intent intent = new Intent(this, ActivityWhoIAm.class);
-        intent.putExtra(KEY_NAME,editName.getText().toString());
-        startActivity(intent);
+        if(editName.getText().toString().matches(""))
+        {
+            Log.d(TAG, "action_start: le champ name est vide");
+            Toast.makeText(MainActivity.this, "You did not enter your name", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else
+        {
+            Log.d(TAG, "action_start: "+ editName.getText());
+            Person user = new Person(editName.getText().toString());
+            Log.d(TAG, "action_start: "+ user.getName());
+            Intent intent = new Intent(this, ActivityWhoIAm.class);
+            intent.putExtra(KEY_NAME,editName.getText().toString());
+            startActivity(intent);
+        }
     }
 
     @Override
