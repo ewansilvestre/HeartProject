@@ -7,14 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class ActivityEnd extends AppCompatActivity {
 
     public static final String TAG = "Heart_ActivityMyDiet";
     Person myUser;
-    private TextView name;
-    private TextView age;
-    private TextView gender;
+    public TextView name;
+    public TextView age;
+    public TextView gender;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +26,6 @@ public class ActivityEnd extends AppCompatActivity {
         name = findViewById(R.id.textView40);
         age = findViewById(R.id.textView42);
         gender = findViewById(R.id.textView44);
-        name.setText(myUser.getName());
-        age.setText(myUser.getAge());
-        gender.setText(myUser.getGenre());
     }
 
     private void getData() {
@@ -44,6 +42,13 @@ public class ActivityEnd extends AppCompatActivity {
         else{
             Log.d(TAG, "Erreur de transfert depuis MainActivity");
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        CalculateData request = new CalculateData(myUser, this);
+        request.execute();
     }
 
     //public void action_close_app (View v){
