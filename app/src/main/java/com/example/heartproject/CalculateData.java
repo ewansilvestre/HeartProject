@@ -57,13 +57,13 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateHeartTra(Person p){
         int cont = 0;
-        if(p.getPtMedecin() == "Oui" || p.getPtMedecin() == "Yes"){
+        if(p.getPtMedecin().matches("Oui") || p.getPtMedecin().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getBilanCardiaque() == "Oui" || p.getBilanCardiaque() == "Yes"){
+        if(p.getBilanCardiaque().matches("Oui") || p.getBilanCardiaque().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getConsulteCardio() == "Oui" || p.getConsulteCardio() == "Yes"){
+        if(p.getConsulteCardio().matches("Oui") || p.getConsulteCardio().matches("Yes")){
             cont = cont + 1;
         }
         if(cont > 2){
@@ -76,22 +76,22 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateDiet(Person p){
         int cont = 0;
-        if(p.getDej() == "Oui" || p.getDej() == "Yes"){
+        if(p.getDej().matches("Oui") || p.getDej().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getFruit() == "Oui" || p.getFruit() == "Yes"){
+        if(p.getFruit().matches("Oui") || p.getFruit().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getRepasMaison() == "Des plats cuisinés à la maison" || p.getRepasMaison() == "Home-cooked meals"){
+        if(p.getRepasMaison().matches("Des plats cuisinés à la maison") || p.getRepasMaison().matches("Home-cooked meals")){
             cont = cont + 1;
         }
-        if(p.getPlatCuisiner() == "Oui" || p.getPlatCuisiner() == "Yes"){
+        if(p.getPlatCuisiner().matches("Oui")|| p.getPlatCuisiner().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getCharcuterie() == "Non" || p.getCharcuterie() == "No"){
+        if(p.getCharcuterie().matches("Non") || p.getCharcuterie().matches("No")){
             cont = cont + 1;
         }
-        if(p.getNutriScore() == "Oui" || p.getNutriScore() == "Yes"){
+        if(p.getNutriScore().matches("Oui") || p.getNutriScore().matches("Yes")){
             cont = cont + 1;
         }
         if(cont > 3){
@@ -104,25 +104,25 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateAct(Person p){
         int cont = 0;
-        if(p.getMarche() == "Oui" || p.getMarche() == "Yes"){
+        if(p.getMarche().matches("Oui") || p.getMarche().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getActParJour() == "1"){
+        if(p.getActParJour().matches("1")){
             cont = cont + 1;
         }
-        else if(p.getActParJour() == "2"){
+        else if(p.getActParJour().matches("2")){
             cont = cont + 2;
         }
-        else if(p.getActParJour() == "3 et +" || p.getActParJour() == "3 and +"){
+        else if(p.getActParJour().matches("3 et +") || p.getActParJour().matches("3 and +")){
             cont = cont + 3;
         }
-        if(p.getFreqCardiaque() == "Oui" || p.getFreqCardiaque() == "Yes"){
+        if(p.getFreqCardiaque().matches("Oui") || p.getFreqCardiaque().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getProfilSportif() == "Vous faites réguliérement de sport" || p.getProfilSportif() == "You do sport regularly"){
+        if(p.getProfilSportif().matches("Vous faites réguliérement de sport") || p.getProfilSportif().matches("You do sport regularly")){
             cont = cont + 1;
         }
-        if(p.getWeAct() == "Vous promener" || p.getWeAct() == "Faire du sport" || p.getWeAct() == "Walk around" || p.getWeAct() == "Do sports"){
+        if(p.getWeAct().matches("Vous promener") || p.getWeAct().matches("Faire du sport") || p.getWeAct().matches("Walk around") || p.getWeAct().matches("Do sports")){
             cont = cont + 1;
         }
         if(cont > 4){
@@ -135,13 +135,13 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateTabac(Person p){
         int cont = 0;
-        if(p.getFumeur() == "Non" || p.getFumeur() == "No"){
+        if(p.getFumeur().matches("Non") || p.getFumeur().matches("No")){
             cont = cont + 1;
         }
-        if(p.getAcienFumeur() == "Non" || p.getAcienFumeur() == "No"){
+        if(p.getAcienFumeur().matches("Non") || p.getAcienFumeur().matches("No")){
             cont = cont + 1;
         }
-        if(p.getFumeurDomicile() == "Non" || p.getFumeur() == "No"){
+        if(p.getFumeurDomicile().matches("Non") || p.getFumeur().matches("No")){
             cont = cont + 1;
         }
         if(cont > 2){
@@ -154,16 +154,16 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateStress(Person p){
         int cont = 0;
-        if(p.getStress() == "Jamais" || p.getStress() == "Parfois" || p.getStress() == "Never" || p.getStress() == "Sometime"){
+        if(p.getStress().matches("Jamais") || p.getStress().matches("Parfois") || p.getStress().matches("Never") || p.getStress().matches("Sometime")){
             cont = cont + 1;
         }
-        if(p.getColere() == "Jamais" || p.getColere() == "Peu" || p.getColere() == "Little" || p.getColere() == "Never"){
+        if(p.getColere().matches("Jamais") || p.getColere().matches("Peu") || p.getColere().matches("Little") || p.getColere().matches("Never")){
             cont = cont + 1;
         }
-        if(p.getMedicament() == "Non" || p.getMedicament() == "No"){
+        if(p.getMedicament().matches("Non") || p.getMedicament().matches("No")){
             cont = cont + 1;
         }
-        if(p.getGestionFamille() == "Oui" || p.getGestionFamille() == "Yes"){
+        if(p.getGestionFamille().matches("Oui") || p.getGestionFamille().matches("Yes")){
             cont = cont + 1;
         }
         if(cont > 2){
@@ -176,16 +176,16 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
 
     private Boolean calculateLife(Person p){
         int cont = 0;
-        if(p.getAlcool() == "Non" || p.getAlcool() == "No"){
+        if(p.getAlcool().matches("Non") || p.getAlcool().matches("No")){
             cont = cont + 1;
         }
-        if(p.getEnergisant() == "Non" || p.getEnergisant() == "No"){
+        if(p.getEnergisant().matches("Non") || p.getEnergisant().matches("No")){
             cont = cont + 1;
         }
-        if(p.getDormir() == "Oui" || p.getDormir() == "Yes"){
+        if(p.getDormir().matches("Oui") || p.getDormir().matches("Yes")){
             cont = cont + 1;
         }
-        if(p.getTroubleSommeil() == "Non" || p.getTroubleSommeil() == "No"){
+        if(p.getTroubleSommeil().matches("Non") || p.getTroubleSommeil().matches("No")){
             cont = cont + 1;
         }
         if(cont > 2){

@@ -75,12 +75,12 @@ public class ActivityEnd extends AppCompatActivity {
         startActivity(intent);
     }
 
-    //public void action_close_app (View v){
-    //    Log.d(TAG, "action_close_app: Fermeture de l'application");
-    //    super.onDestroy();
-    //    System.runFinalizersOnExit(true);
-    //    System.exit(0);
-    //}
+    public void action_close_app (View v){
+        Log.d(TAG, "action_close_app: Fermeture de l'application");
+        super.onDestroy();
+        System.runFinalizersOnExit(true);
+        System.exit(0);
+    }
 
     private static final String KEY_USER = "user";
 }
