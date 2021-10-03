@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class ActivityWhoIAm extends AppCompatActivity {
@@ -15,6 +18,9 @@ public class ActivityWhoIAm extends AppCompatActivity {
     public static final String TAG = "Heart_ActivityWhoIAm";
     private Person myUser;
     private EditText editAge;
+    private RadioGroup rdGrp;
+    private RadioButton radio1;
+    private RadioButton radio2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +29,8 @@ public class ActivityWhoIAm extends AppCompatActivity {
         getData();
         Log.d(TAG, "on_create: "+myUser.getName());
         editAge = findViewById(R.id.age);
+        radio1 = findViewById(R.id.radioButton3);
+        radio2 = findViewById(R.id.radioButton);
     }
 
     private void getData() {
@@ -48,14 +56,25 @@ public class ActivityWhoIAm extends AppCompatActivity {
             Toast.makeText(this.getBaseContext(),"You did not enter your age",Toast.LENGTH_LONG).show();
             Log.d(TAG, "action_next_step: toast");
         }
-        else
-        {
+        else if(radio1.isChecked() || radio2.isChecked()){
+            if(radio1.isChecked()){
+                myUser.setGenre("Homme");
+            }
+            else{
+                myUser.setGenre("Femme");
+            }
             Log.d(TAG, "action_next_step: "+ editAge.getText()+" "+myUser.getName());
             myUser.setAge(Integer.parseInt(String.valueOf(editAge.getText())));
             Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getAge() + " " + myUser.getGenre());
             Intent intent2 = new Intent(this, ActivityMyHearth.class);
             intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);
+        }
+        else
+        {
+            Log.d(TAG, "action_next_step: Aucune radio n'est cocher");
+            Toast.makeText(this.getBaseContext(),"You did not select your gender",Toast.LENGTH_LONG).show();
+            Log.d(TAG, "action_next_step: toast");
         }
     }
 
