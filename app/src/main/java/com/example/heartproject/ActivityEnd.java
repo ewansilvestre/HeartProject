@@ -16,6 +16,14 @@ public class ActivityEnd extends AppCompatActivity {
     public TextView name;
     public TextView age;
     public TextView gender;
+    public TextView heart;
+    public TextView heartTra;
+    public TextView diet;
+    public TextView act;
+    public TextView tabac;
+    public TextView stress;
+    public TextView life;
+    public TextView n;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +34,14 @@ public class ActivityEnd extends AppCompatActivity {
         name = findViewById(R.id.textView40);
         age = findViewById(R.id.textView42);
         gender = findViewById(R.id.textView44);
+        heart = findViewById(R.id.textView46);
+        heartTra = findViewById(R.id.textView47);
+        diet = findViewById(R.id.textView48);
+        act = findViewById(R.id.textView49);
+        tabac = findViewById(R.id.textView50);
+        stress = findViewById(R.id.textView51);
+        life = findViewById(R.id.textView52);
+        n = findViewById(R.id.textView53);
     }
 
     private void getData() {
