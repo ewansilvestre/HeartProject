@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HeartProject">
         <activity
+            android:name=".ActivityEnd"
+            android:exported="true" />
+        <activity
             android:name=".ActivityMyLifeHygiene"
             android:exported="true" />
         <activity

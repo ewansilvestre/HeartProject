@@ -62,7 +62,7 @@ public class ActivityMyLifeHygiene extends AppCompatActivity {
             Log.d(TAG, "action_next_step: " + sp4.getSelectedItem() + " " + myUser.getName());
             myUser.setTroubleSommeil(sp4.getSelectedItem().toString());
             Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getAlcool() + " " + myUser.getEnergisant() + " " + myUser.getDormir() + " " + myUser.getTroubleSommeil());
-            Intent intent2 = new Intent(this, ActivityMyLifeHygiene.class);
+            Intent intent2 = new Intent(this, ActivityEnd.class);
             intent2.putExtra(KEY_USER, myUser);
             startActivity(intent2);
         }
