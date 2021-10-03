@@ -49,4 +49,12 @@
     <string name="do_you_ever_drink_more_than_3_glasses_of_alcohol_during_the_day_once_or_twice_a_week">Vous arrive-t-il de boire plus de 3 verres d’alcool dans la journée 1 à 2 fois par semaine (vin et bière compris) ?</string>
     <string name="do_you_get_more_than_7_hours_of_sleep_per_night">Dormez-vous plus de 7 heures par nuit ?</string>
     <string name="are_you_prone_to_sleep_disturbances">Êtes-vous sujet à des troubles du sommeil ?</string>
+    <string name="your_result">Votre Résultat</string>
+    <string name="name2">Nom :</string>
+    <string name="age2">Age :</string>
+    <string name="Gender2">Sexe :</string>
+    <string name="finish">Finir</string>
+    <string name="official_site">Site Officiel</string>
+    <string name="close_application">Fermer l\'Application</string>
+    <string name="new_test">Nouveau Test</string>
 </resources>
