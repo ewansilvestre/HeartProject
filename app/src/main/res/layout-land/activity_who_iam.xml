@@ -25,8 +25,8 @@
         android:id="@+id/radioGroup"
         android:layout_width="193dp"
         android:layout_height="122dp"
-        android:layout_marginTop="60dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
@@ -36,7 +36,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:text="@string/i_am"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="81dp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -45,8 +47,8 @@
             android:fontFamily="sans-serif"
             android:text="@string/a_man"
             android:textSize="14sp"
-            tools:layout_editor_absoluteX="164dp"
-            tools:layout_editor_absoluteY="147dp" />
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="101dp" />
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -54,9 +56,23 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:text="@string/a_woman"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="149dp" />
 
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/my_age"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup" />
 
     <Button
         android:id="@+id/button"
@@ -80,25 +96,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/monprofil" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="99dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/my_age"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
-
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
         android:layout_width="194dp"
         android:layout_height="52dp"
-        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
-        app:layout_constraintStart_toStartOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/age"
