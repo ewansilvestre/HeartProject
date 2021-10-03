@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="SportProfil">
+        <item> </item>
+        <item>You never do sports</item>
+        <item>You do little sport</item>
+        <item>You do sport regularly</item>
+    </string-array>
+</resources>

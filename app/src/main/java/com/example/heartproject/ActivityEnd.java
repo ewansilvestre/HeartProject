@@ -3,6 +3,7 @@ package com.example.heartproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -65,6 +66,13 @@ public class ActivityEnd extends AppCompatActivity {
         super.onStart();
         CalculateData request = new CalculateData(myUser, this);
         request.execute();
+    }
+
+    public void action_site_officiel (View v){
+        Log.d(TAG, "action_site_officiel: Vers le site officiel");
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://fedecardio.org/"));
+        startActivity(intent);
     }
 
     //public void action_close_app (View v){
