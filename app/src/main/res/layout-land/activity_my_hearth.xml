@@ -10,12 +10,12 @@
         android:id="@+id/textView4"
         android:layout_width="251dp"
         android:layout_height="50dp"
-        android:layout_marginStart="364dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginStart="372dp"
+        android:layout_marginTop="16dp"
         android:text="@string/do_you_know_your_body_mass_index"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView5"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         android:text="@string/do_you_have_heart_issues"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,29 +47,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="32dp"
         android:text="@string/do_you_have_cholesterol_issues"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="145dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="228dp"
+        android:layout_width="143dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="28dp"
         android:text="@string/are_you_diabetic"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="388dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         android:text="@string/are_you_prone_to_hypertension"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,12 +101,12 @@
         android:id="@+id/textView11"
         android:layout_width="229dp"
         android:layout_height="39dp"
-        android:layout_marginStart="380dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginStart="388dp"
+        android:layout_marginTop="16dp"
         android:text="@string/have_there_been_cases_of_heart_problems_in_your_family"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -122,12 +122,10 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="32dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
@@ -135,12 +133,10 @@
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="8dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
         app:layout_constraintStart_toEndOf="@+id/textView7"
         app:layout_constraintTop_toBottomOf="@+id/switch1" />
 
@@ -148,12 +144,11 @@
         android:id="@+id/switch3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="408dp"
+        android:layout_marginTop="8dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintEnd_toStartOf="@+id/textView4"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toEndOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/switch2" />
 
@@ -161,7 +156,7 @@
         android:id="@+id/switch4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
@@ -174,7 +169,7 @@
         android:id="@+id/switch5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:minWidth="48dp"
         android:minHeight="48dp"
@@ -188,7 +183,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:minWidth="48dp"
         android:minHeight="48dp"

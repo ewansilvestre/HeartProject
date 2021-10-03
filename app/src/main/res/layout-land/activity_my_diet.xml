@@ -45,8 +45,8 @@
         android:id="@+id/textView"
         android:layout_width="261dp"
         android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
         android:text="@string/do_you_start_your_day_with_breakfast"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -55,18 +55,18 @@
         android:id="@+id/textView2"
         android:layout_width="257dp"
         android:layout_height="37dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="112dp"
         android:text="@string/do_you_eat_fruits_and_vegetables_every_day"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="214dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="220dp"
+        android:layout_width="255dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="164dp"
         android:text="@string/at_your_house_do_you_eat_most_often"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -75,39 +75,41 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="432dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="140dp"
         android:text="@string/do_you_realize_your_dishes"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="213dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="396dp"
-        android:layout_marginTop="164dp"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="128dp"
         android:text="@string/do_you_eat_cold_meats_regularly"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinner14"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="424dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="124dp"
         android:text="@string/do_you_know_the_nutri_score"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <Spinner
         android:id="@+id/spinner10"
         android:layout_width="95dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
         android:entries="@array/YesNo"
+        app:layout_constraintEnd_toStartOf="@+id/textView16"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -115,9 +117,11 @@
         android:id="@+id/spinner11"
         android:layout_width="95dp"
         android:layout_height="45dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
         android:entries="@array/YesNo"
+        app:layout_constraintEnd_toStartOf="@+id/textView17"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -125,9 +129,11 @@
         android:id="@+id/spinner12"
         android:layout_width="98dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="164dp"
         android:entries="@array/DishType"
+        app:layout_constraintEnd_toStartOf="@+id/textView18"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -135,9 +141,10 @@
         android:id="@+id/spinner13"
         android:layout_width="98dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
         android:entries="@array/YesNo"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView16"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -146,21 +153,23 @@
         android:layout_width="95dp"
         android:layout_height="45dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="16dp"
         android:entries="@array/YesNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner13" />
 
     <Spinner
         android:id="@+id/spinner15"
-        android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="220dp"
+        android:layout_width="98dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/textView18"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner14" />
 
     <ImageView
         android:id="@+id/imageView"
