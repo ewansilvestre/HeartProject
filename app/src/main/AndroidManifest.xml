@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HeartProject">
         <activity
+            android:name=".ActivityDrug"
+            android:exported="true" />
+        <activity
             android:name=".ActivityClose"
             android:exported="true" />
         <activity

@@ -41,6 +41,9 @@ public class Person implements Parcelable {
     private String energisant;
     private String dormir;
     private String troubleSommeil;
+    private String traitment;
+    private String genetic;
+    private String drug;
 
     protected Person(Parcel in) {
         name = in.readString();
@@ -83,6 +86,9 @@ public class Person implements Parcelable {
         energisant = in.readString();
         dormir = in.readString();
         troubleSommeil = in.readString();
+        traitment = in.readString();
+        genetic = in.readString();
+        drug = in.readString();
     }
 
     public static final Creator<Person> CREATOR = new Creator<Person>() {
@@ -138,6 +144,9 @@ public class Person implements Parcelable {
         parcel.writeString(energisant);
         parcel.writeString(dormir);
         parcel.writeString(troubleSommeil);
+        parcel.writeString(traitment);
+        parcel.writeString(genetic);
+        parcel.writeString(drug);
     }
 
     public Person() {
@@ -175,6 +184,9 @@ public class Person implements Parcelable {
         energisant = "Unknow";
         dormir = "Unknow";
         troubleSommeil = "Unknow";
+        traitment = "Unknow";
+        genetic = "Unknow";
+        drug = "Unknow";
     }
 
     public String getName() {
@@ -447,5 +459,29 @@ public class Person implements Parcelable {
 
     public void setTroubleSommeil(String troubleSommeil) {
         this.troubleSommeil = troubleSommeil;
+    }
+
+    public String getTraitment() {
+        return traitment;
+    }
+
+    public void setTraitment(String traitment) {
+        this.traitment = traitment;
+    }
+
+    public String getGenetic() {
+        return genetic;
+    }
+
+    public void setGenetic(String genetic) {
+        this.genetic = genetic;
+    }
+
+    public String getDrug() {
+        return drug;
+    }
+
+    public void setDrug(String drug) {
+        this.drug = drug;
     }
 }

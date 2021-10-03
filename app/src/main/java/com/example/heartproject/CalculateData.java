@@ -196,6 +196,25 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
         }
     }
 
+    private Boolean calculateDrug(Person p){
+        int cont = 0;
+        if(p.getTraitment().matches("Non") || p.getTraitment().matches("No")){
+            cont = cont + 1;
+        }
+        if(p.getGenetic().matches("Non") || p.getGenetic().matches("No")){
+            cont = cont + 1;
+        }
+        if(p.getDrug().matches("Non") || p.getDrug().matches("No")){
+            cont = cont + 1;
+        }
+        if(cont > 2){
+            return true;
+        }
+        else{
+            return  false;
+        }
+    }
+
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
@@ -244,6 +263,12 @@ public class CalculateData extends AsyncTask<Void,Integer,Void> {
         }
         else{
             context.life.setTextColor(RED);
+        }
+        if(calculateDrug(myUser) == true){
+            context.drug.setTextColor(GREEN);
+        }
+        else{
+            context.drug.setTextColor(RED);
         }
     }
 }

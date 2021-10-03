@@ -57,4 +57,8 @@
     <string name="official_site">Site Officiel</string>
     <string name="close_application">Fermer l\'Application</string>
     <string name="new_test">Nouveau Test</string>
+    <string name="drug_and_medication">Drogue Et Traitement</string>
+    <string name="do_you_take_a_medical_treatment">Prenez-vous un traitement médical ?</string>
+    <string name="do_you_use_drugs">Consomez-vous des drogue ?</string>
+    <string name="did_you_have_a_genetic_disease">Avez-vous une malédie génétique ?</string>
 </resources>

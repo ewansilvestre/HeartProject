@@ -56,4 +56,8 @@
     <string name="official_site">Official Site</string>
     <string name="close_application">Close Application</string>
     <string name="new_test">New Test</string>
+    <string name="drug_and_medication">Drug And Medication</string>
+    <string name="do_you_take_a_medical_treatment">Do you take a medical treatment ?</string>
+    <string name="do_you_use_drugs">Do you use drugs ?</string>
+    <string name="did_you_have_a_genetic_disease">Did you have a genetic disease ?</string>
 </resources>
