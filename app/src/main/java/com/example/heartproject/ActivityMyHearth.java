@@ -57,19 +57,46 @@ public class ActivityMyHearth extends AppCompatActivity {
     }
 
     public void action_next_step (View v){
-        if(swi.getText().toString().matches(" "))
-        {
-            Log.d(TAG, "action_start: le champ name est vide");
-            Toast.makeText(this.getBaseContext(),"You forgot a field",Toast.LENGTH_LONG).show();
-            Log.d(TAG, "action_start: toast");
+        if(swi.isChecked()){
+            myUser.setPbCardiaque(true);
         }
-        else
-        {
-            Intent intent2 = new Intent(this, ActivityMyHeartTracking.class);
-            intent2.putExtra(KEY_USER,myUser);
-            startActivity(intent2);
-            Log.d(TAG, "action_next_step: A faire");
+        else{
+            myUser.setPbCardiaque(false);
         }
+        if(swi2.isChecked()){
+            myUser.setCholesterol(true);
+        }
+        else{
+            myUser.setCholesterol(false);
+        }
+        if(swi3.isChecked()){
+            myUser.setDiabete(true);
+        }
+        else{
+            myUser.setDiabete(false);
+        }
+        if(swi4.isChecked()){
+            myUser.setHypertension(true);
+        }
+        else{
+            myUser.setHypertension(false);
+        }
+        if(swi5.isChecked()){
+            myUser.setPbCardiaqueFamille(true);
+        }
+        else{
+            myUser.setPbCardiaqueFamille(false);
+        }
+        if(swi6.isChecked()){
+            myUser.setImc(true);
+        }
+        else{
+            myUser.setImc(false);
+        }
+        Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getPbCardiaque() + " " + myUser.getCholesterol() + " " + myUser.getDiabete() + " " + myUser.getHypertension() + " " + myUser.getPbCardiaqueFamille() + " " + myUser.getImc());
+        Intent intent2 = new Intent(this, ActivityMyHeartTracking.class);
+        intent2.putExtra(KEY_USER,myUser);
+        startActivity(intent2);
     }
 
     public void action_previous_step (View v){

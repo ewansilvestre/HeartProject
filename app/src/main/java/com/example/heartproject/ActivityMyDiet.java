@@ -70,7 +70,7 @@ public class ActivityMyDiet extends AppCompatActivity {
             myUser.setCharcuterie(sp5.getSelectedItem().toString());
             Log.d(TAG, "action_next_step: "+ sp6.getSelectedItem()+" "+myUser.getName());
             myUser.setNutriScore(sp6.getSelectedItem().toString());
-            Log.d(TAG, "action_next_step: "+ myUser.getPtMedecin()+" "+myUser.getName());
+            Log.d(TAG, "action_next_step: " + myUser.getName() + " " + myUser.getDej() + " " + myUser.getFruit() + " " + myUser.getRepasMaison() + " " + myUser.getPlatCuisiner() + " " + myUser.getCharcuterie() + " " + myUser.getNutriScore());
             Intent intent2 = new Intent(this, ActivityMyPhysicalActivity.class);
             intent2.putExtra(KEY_USER,myUser);
             startActivity(intent2);
