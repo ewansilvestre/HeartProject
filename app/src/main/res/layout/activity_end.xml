@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="70dp"
-        android:text="Name :"
+        android:text="@string/name2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="Age :"
+        android:text="@string/age2"
         app:layout_constraintBottom_toBottomOf="@+id/textView40"
         app:layout_constraintStart_toEndOf="@+id/textView40"
         app:layout_constraintTop_toTopOf="@+id/textView40" />
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:text="Gender :"
+        android:text="@string/Gender2"
         app:layout_constraintBottom_toBottomOf="@+id/textView42"
         app:layout_constraintStart_toEndOf="@+id/textView42"
         app:layout_constraintTop_toTopOf="@+id/textView42" />
@@ -72,18 +72,18 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:onClick="action_close_app"
-        android:text="Close application"
+        android:text="@string/finish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView45"
-        android:layout_width="134dp"
-        android:layout_height="32dp"
+        android:layout_width="202dp"
+        android:layout_height="31dp"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="Your Result"
+        android:text="@string/your_result"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -184,7 +184,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:onClick="action_site_officiel"
-        android:text="Site officiel"
+        android:text="@string/official_site"
         app:layout_constraintBottom_toTopOf="@+id/button16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

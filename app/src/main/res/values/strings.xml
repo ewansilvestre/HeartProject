@@ -48,4 +48,12 @@
     <string name="do_you_ever_drink_energy_drinks">Do you ever drink energy drinks ?</string>
     <string name="do_you_get_more_than_7_hours_of_sleep_per_night">Do you get more than 7 hours of sleep per night ?</string>
     <string name="are_you_prone_to_sleep_disturbances">Are you prone to sleep disturbances ?</string>
+    <string name="your_result">Your Result</string>
+    <string name="name2">Name :</string>
+    <string name="age2">Age :</string>
+    <string name="Gender2">Gender :</string>
+    <string name="finish">Finish</string>
+    <string name="official_site">Official Site</string>
+    <string name="close_application">Close Application</string>
+    <string name="new_test">New Test</string>
 </resources>

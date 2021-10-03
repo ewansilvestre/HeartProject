@@ -3,33 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_diet.xml" value="0.264" />
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_heart_tracking.xml" value="0.264" />
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_hearth.xml" value="0.264" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout-land/activity_main.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout-land/activity_my_diet.xml" value="0.21516754850088182" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_close.xml" value="0.2" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_end.xml" value="0.264" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_diet.xml" value="0.4" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_heart_tracking.xml" value="0.4" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_hearth.xml" value="0.4" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_life_hygiene.xml" value="0.264" />
         <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_physical.xml" value="0.264" />
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_stress_managment.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_tobacco_consumption.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_stress_managment.xml" value="0.264" />
+        <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_my_tobacco_consumption.xml" value="0.4" />
         <entry key="..\:/Users/silve/AndroidStudioProjects/HeartProject/app/src/main/res/layout/activity_who_iam.xml" value="0.264" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_main.xml" value="0.264" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_diet.xml" value="0.536" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_heart_tracking.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_hearth.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_life_hygiene.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_physical.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_stress_managment.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_my_tobacco_consumption.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout-land/activity_who_iam.xml" value="0.21516754850088182" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_end.xml" value="0.16983695652173914" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_main.xml" value="0.16983695652173914" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_diet.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_heart_tracking.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_hearth.xml" value="0.264" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_life_hygiene.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_physical.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_stress_managment.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_my_tobacco_consumption.xml" value="0.23324275362318841" />
-        <entry key="..\:/cours/HeartProject/app/src/main/res/layout/activity_who_iam.xml" value="0.13020833333333334" />
       </map>
     </option>
   </component>

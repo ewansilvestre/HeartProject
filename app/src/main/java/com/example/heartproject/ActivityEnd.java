@@ -76,10 +76,9 @@ public class ActivityEnd extends AppCompatActivity {
     }
 
     public void action_close_app (View v){
-        Log.d(TAG, "action_close_app: Fermeture de l'application");
-        super.onDestroy();
-        System.runFinalizersOnExit(true);
-        System.exit(0);
+        Intent intent = new Intent(getApplicationContext(), ActivityClose.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
 
     private static final String KEY_USER = "user";
