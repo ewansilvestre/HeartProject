@@ -55,8 +55,8 @@
         android:id="@+id/textView21"
         android:layout_width="239dp"
         android:layout_height="72dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="112dp"
         android:text="@string/how_many_times_a_week_do_you_exercise_for_at_least_30_minutes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -65,28 +65,28 @@
         android:id="@+id/textView22"
         android:layout_width="250dp"
         android:layout_height="57dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="230dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="208dp"
         android:text="@string/do_you_know_your_heart_rate_that_should_not_be_exceeded_during_exercise"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView23"
-        android:layout_width="249dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="320dp"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="388dp"
+        android:layout_marginTop="88dp"
         android:text="@string/regarding_your_sports_profile_would_you_say_that"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="248dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="410dp"
+        android:layout_width="221dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="380dp"
+        android:layout_marginTop="152dp"
         android:text="@string/which_of_the_following_activities_would_you_do_the_most_easily_on_your_weekends"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
@@ -94,51 +94,61 @@
     <Spinner
         android:id="@+id/spinner16"
         android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Spinner
         android:id="@+id/spinner17"
         android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="10dp"
         android:entries="@array/TimeNumber"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/textView21"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Spinner
         android:id="@+id/spinner18"
         android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="12dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toEndOf="@+id/textView22"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Spinner
         android:id="@+id/spinner19"
         android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="8dp"
         android:entries="@array/SportProfil"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <Spinner
         android:id="@+id/spinner20"
         android:layout_width="95dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="408dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="12dp"
         android:entries="@array/WeekendActivity"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
         app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <ImageView

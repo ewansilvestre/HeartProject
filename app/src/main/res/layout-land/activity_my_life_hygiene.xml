@@ -65,28 +65,28 @@
         android:id="@+id/textView36"
         android:layout_width="250dp"
         android:layout_height="45dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
         android:text="@string/do_you_ever_drink_energy_drinks"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView37"
-        android:layout_width="249dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="288dp"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="408dp"
+        android:layout_marginTop="84dp"
         android:text="@string/do_you_get_more_than_7_hours_of_sleep_per_night"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <TextView
         android:id="@+id/textView38"
-        android:layout_width="246dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="392dp"
+        android:layout_width="198dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="408dp"
+        android:layout_marginTop="176dp"
         android:text="@string/are_you_prone_to_sleep_disturbances"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
@@ -95,11 +95,11 @@
         android:id="@+id/spinner5"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toEndOf="@+id/textView35"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
@@ -107,11 +107,11 @@
         android:id="@+id/spinner6"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="176dp"
         android:layout_marginEnd="10dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toEndOf="@+id/textView36"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
@@ -119,12 +119,11 @@
         android:id="@+id/spinner24"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="288dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toEndOf="@+id/textView37"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
@@ -132,11 +131,9 @@
         android:id="@+id/spinner25"
         android:layout_width="95dp"
         android:layout_height="48dp"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="12dp"
         android:entries="@array/YesNo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView38"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 </androidx.constraintlayout.widget.ConstraintLayout>
